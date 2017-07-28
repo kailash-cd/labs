@@ -1,0 +1,24 @@
+<form>
+    <table width="400" border="0" cellspacing="2" cellpadding="0">
+        <tr>
+            <td width="29%" class="bodytext">Your name:</td>
+            <td width="71%"><input name="name" type="text" id="name" size="32" ng-model="name"></td> {{name}}
+        </tr>
+        <tr>
+            <td class="bodytext">Email address:</td>
+            <td><input name="email" type="text" id="email" size="32" ng-model="email"></td> {{email}}
+        </tr>
+        <tr>
+            <td class="bodytext">Comment:</td>
+            <td><textarea name="comment" cols="45" rows="6" id="comment" class="bodytext" ng-model="comment"></textarea></td> {{comment}}
+        </tr>
+        <tr>
+            <td class="bodytext"> </td>
+            <td align="left" valign="top"><input type="button" ng-click="sendMail()" name="Submit" value="Send"></td>
+        </tr>
+    </table>
+</form>
+
+<footer style="position: absolute;width: 100%;" class="container-fluid text-center">
+    <p><img class="logo" src="./images/logo/logo_trans.png"></p>
+</footer>

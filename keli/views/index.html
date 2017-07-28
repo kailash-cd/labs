@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf8"/>
+    <base href="/">
+    <title>sahiraah.org</title>
+    <link rel="shortcut icon" href="images/logo/logo_trans.png" />
+
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/parallex.css">
+    <link rel="stylesheet" href="./css/other.css">
+
+    <!--bootstarp dependencies-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--bootstarp dependencies ends-->
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav" >
+    <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()" ng-controller="NavCtrl">&times;</a>
+
+    <a href="#/">HOME</a>
+    <!--<a href="#/blog">WHAT WE DO</a>-->
+    <!--<a href="#/whoweare">WHO WE ARE</a>-->
+    <!--<a href="#/counsellors">COUNSELLERS</a>-->
+    <a href="#/about">ABOUT US</a>
+    <a href="#/contact">CONTACT US</a>
+</div>
+
+<div id="main">
+    <table>
+        <tr>
+            <td>
+                <span style="font-size:30px;cursor:pointer;" ng-click="openNav()" ng-controller="NavCtrl">&#9776;</span>
+            </td>
+            <td>
+                <h2 style="font-family: 'Abyssinica SIL';margin-left: 9px;margin-top: 4px;">sahiraah</h2>
+            </td>
+        </tr>
+    </table>
+
+    <hr/>
+    <div  id="app-container"  ng-view>Loading...</div>
+    <script data-main="scripts/webapp.min.js" src="scripts/lib/requirejs/require.js"></script>
+</div>
+</body>
+</html>
