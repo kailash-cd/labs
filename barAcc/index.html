@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
+
+<head>
+    <script data-require="angular.js@*" data-semver="1.2.5" src="http://code.angularjs.org/1.2.5/angular.js"></script>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="parallex.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="app.js"></script>
+
+
+    <!--bootstarp dependencies-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--bootstarp dependencies ends-->
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button ng-click="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+<!-- side bar ends -->
+<!-- top nav bar -->
+<ul style="margin-bottom:1px;">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Tab1</a></li>
+    <li><a href="#contact">Tab2</a></li>
+    <li><a href="#about">About Us</a></li>
+</ul>
+<!-- top nav bar ends -->
+<!-- Page Content -->
+<div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" ng-click="w3_open()">☰</button>
+    <div class="w3-container">
+    <center>
+        <h1>Coming soon..</h1>
+    </center>
+            <!-- app -->
+        <div ng-include="'home.html'"></div>
+    </div>
+</div>
+</body>
+
+</html>
