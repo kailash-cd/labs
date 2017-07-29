@@ -69,6 +69,7 @@ app.controller('myCtrl', function($scope) {
             },
         },
         "pagetoShow":0,
+        "adminPages":0,
         "membersDirectory":[
             {
                 "code":"A-1",

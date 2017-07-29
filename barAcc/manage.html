@@ -1,28 +1,38 @@
-<div class="w3-card-4" style="width:70%">
-    <header class="w3-container w3-light-grey">
-        <h3>John Doe</h3>
-    </header>
-    <div class="w3-container">
-        <p>1 new friend request</p>
-        <hr>
-        <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
-    </div>
-    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
-</div>
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="myCtrl">
 
-<table class="w3-table-all w3-card-4">
-    <tr>
-        <th>SR. NO</th>
-        <th>CODE</th>
-        <th>Naame</th>
-        <th>S/O, D/O, W/O</th>
-        <th>Contact No.</th>
-        <th>Pic</th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td><img src="img_avatar3.png" alt="Profile Pic" class="w3-left w3-circle w3-margin-right" style="width:60px"></td>
-    </tr>
-</table>
+<head>
+    <script data-require="angular.js@*" data-semver="1.2.5" src="angular.js"></script>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="parallex.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="app.js"></script>
+    <script src="dirPagination.js"></script>
+
+
+    <!--bootstarp dependencies-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--bootstarp dependencies ends-->
+</head>
+
+<body>
+<!-- top nav bar -->
+<ul id="topBar" style="margin-bottom:1px;">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Tab1</a></li>
+    <li><a href="#contact">Tab2</a></li>
+    <li><a href="#about">About Us</a></li>
+</ul>
+<!-- top nav bar ends -->
+
+<div ng-show="AppJSON.adminPages == 0" ng-include="'manage_addmembers.html'"></div>
+
+
+</body>
+
+</html>
