@@ -205,7 +205,8 @@ app.controller('myCtrl', function($scope) {
                 "contact":"9412086862 ",
                 "picPath":"images/members/face.gif"
             }
-        ]
+        ],
+        "sno": 1
     }
 
     $scope.w3_open = function() {

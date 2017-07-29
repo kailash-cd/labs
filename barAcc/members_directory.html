@@ -1,3 +1,11 @@
+<div  class="w3-table-all" style="color: #3a3a3a;">
+    <div class="form-group" style="float: right;padding: 2px;">
+        <label for="inputlg">Large input</label>
+        <input class="form-control" style="width: 90px;"  ng-model="q" id="inputlg" type="text">
+    </div>
+   <!-- <input style="float: right;" ng-model="q" id="search"  placeholder="Filter text">-->
+</div>
+
 
 <table class="w3-table-all" style="color: #3a3a3a;">
     <tr>
@@ -8,8 +16,8 @@
         <th>Contact No.</th>
         <th>Image</th>
     </tr>
-    <tr dir-paginate="value in AppJSON.membersDirectory | itemsPerPage: 5" >
-        <td ng-bind="$index+1"></td>
+    <tr dir-paginate="value in AppJSON.membersDirectory | filter:q | itemsPerPage: 5" >
+        <td>{{((AppJSON.sno-1)*5)+$index+1}}</td>
         <td ng-bind="value.code"></td>
         <td ng-bind="value.name"></td>
         <td ng-bind="value.sodowo"></td>
@@ -24,6 +32,7 @@
             class="right pagination-controller"
             max-size="5"
             direction-links="true"
+            on-page-change="pageChangeHandler(newPageNumber)"
             boundary-links="true">
     </dir-pagination-controls>
 </div>
