@@ -11,7 +11,7 @@ footer {
     min-height:200px;
 }
 
-ul {
+#topBar ul {
     list-style-type: none;
     /*margin: 0;*/
     padding: 0;
@@ -19,15 +19,15 @@ ul {
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
     border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-btop-left-radius: 15px;
 }
 
-li {
+#topBar li {
     float: left;
     width:80px;
 }
 
-li a {
+#topBar li a {
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
     border-bottom-right-radius: 15px;
@@ -39,11 +39,75 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#topBar li a:hover:not(.active) {
     background-color: #ddd;
 }
 
-li a.active {
+#topBar li a.active {
     color: white;
     background-color: #4CAF50;
+}
+
+
+/* Make it a marquee */
+ .marquee {
+    /*width: 450px;*/
+    color: red;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 60s linear infinite;
+}
+
+ .marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { text-indent: 17.5em }
+    100% { text-indent: -105em }
+}
+/*marquee css ends*/
+
+/*Gallery css*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/*Gallery css*/
+
+.groupPic {
+    max-width: 100%;
+    height: auto;
+}
+
+.addressBar {
+    background-color: deepskyblue;
+    color: #2C393E;
+    font-style: oblique;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    font-size: 80%;
+    line-height: 20px;
 }

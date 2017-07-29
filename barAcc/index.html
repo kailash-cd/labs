@@ -30,22 +30,24 @@
 </div>
 <!-- side bar ends -->
 <!-- top nav bar -->
-<ul style="margin-bottom:1px;">
+<ul id="topBar" style="margin-bottom:1px;"><!--
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">Tab1</a></li>
     <li><a href="#contact">Tab2</a></li>
-    <li><a href="#about">About Us</a></li>
+    <li><a href="#about">About Us</a></li>-->
+    <marquee class="marquee">Notification Message</marquee>
 </ul>
 <!-- top nav bar ends -->
 <!-- Page Content -->
 <div class="w3-teal">
-    <button class="w3-button w3-teal w3-xlarge" ng-click="w3_open()">☰</button>
+    <button class="w3-button w3-xlarge" ng-click="w3_open()">☰</button>
     <div class="w3-container">
     <center>
         <h1>Coming soon..</h1>
     </center>
             <!-- app -->
-        <div ng-include="'home.html'"></div>
+        <div ng-if="AppJSON.booleans.homepage.enabled" ng-include="'home.html'"></div>
+        <div ng-if="AppJSON.booleans.aboutpage.enabled" ng-include="'about.html'"></div>
     </div>
 </div>
 </body>
