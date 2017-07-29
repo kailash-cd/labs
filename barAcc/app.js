@@ -121,8 +121,12 @@ app.controller('myCtrl', function($scope) {
                 "contact":"9411167698",
                 "picPath":"images/members/face.gif"
             },
-        ]
-    }
+        ],
+        "sno": 1
+    };
+    $scope.pageChangeHandler = function(num) {
+       $scope.AppJSON.sno = num;
+    };
 
     $scope.w3_open = function() {
         document.getElementById("mySidebar").style.display = "block";
