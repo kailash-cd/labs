@@ -143,7 +143,11 @@ app.controller('myCtrl', function($scope) {
             case "members_directory":
                 $scope.AppJSON.pagetoShow = 2;
                 break;
+            case "aimAndObjectives":
+                $scope.AppJSON.pagetoShow = 3;
+                break;
         }
+        $scope.w3_close();
 
     }
 
