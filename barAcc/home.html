@@ -65,55 +65,14 @@
             <div class="col-sm-4 thumbnail">
                 <!--<img src="http://www.rgtrust.ru/media/styles/images/not_image.gif" class="img-responsive" style="width:100%;height:300px;"alt="Image">-->
                 <p>
-
                     <table>
                         <tr>
                             <th>Name</th>
                             <th>Role</th>
                         </tr>
-                        <tr>
-                            <td>B.S. Jakhar  </td>
-                            <td>President</td>
-                        </tr>
-                        <tr>
-                            <td>Sunil Sehrawat  </td>
-                            <td>Vice President </td>
-                        </tr>
-                        <tr>
-                            <td>Rajeshwar Dagar </td>
-                            <td>Hony. Secretary</td>
-                        </tr>
-                        <tr>
-                            <td>Vijay Dalal  </td>
-                            <td>Addl. Secretary</td>
-                        </tr>
-                        <tr>
-                            <td>Amit Chauhan  </td>
-                            <td>Treasurer</td>
-                        </tr>
-                        <tr>
-                            <td>Sushil Ahlawat </td>
-                            <td>Member Library</td>
-                        </tr>
-                        <tr>
-                            <td>Manju Sehrawat </td>
-                            <td>Lady Member Executive</td>
-                        </tr>
-                        <tr>
-                            <td>Govind Singh   </td>
-                            <td>Sr. Member Executive</td>
-                        </tr>
-                        <tr>
-                            <td>Raghuraj Singh  </td>
-                            <td>Sr. Member Executive</td>
-                        </tr>
-                        <tr>
-                            <td> Ashish Rohilla </td>
-                            <td>Member Executive</td>
-                        </tr>
-                        <tr>
-                            <td>Danish Mudgal  </td>
-                            <td>Member Executive</td>
+                        <tr ng-repeat="item in AppJSON.membersDirectory">
+                            <td ng-bind="item.name"></td>
+                            <td ng-bind="item.designation"></td>
                         </tr>
                     </table>
                 </p>
@@ -133,6 +92,10 @@
         </div>
         <hr/>
         <div class="col-sm-12">
+
+            <div class="col-sm-8">
+                <img  class="groupPic" src="images/banner/2.jpg" alt="group pic" width="1000" max-height="300">
+            </div>
             <div class="col-sm-4 well" >
                 <b>CONTACT US </b><hr/>
                 <strong>NAINITAL COURT BAR ASSOCIATION</strong> <br/>
@@ -145,13 +108,9 @@
                 Email:
                 dwarkacourtbarassociation@gmail.com
             </div>
-            <div class="col-sm-8">
-                <img  class="groupPic" src="images/banner/2.jpg" alt="group pic" width="1000" max-height="300">
-            </div>
         </div>
     </div>
 </div><br>
 <footer class="container-fluid text-center">
-    <!--<p><img class="logo" src="./images/logo/logo_trans.png"></p>-->
     <p><img class="logo" src="http://www.rgtrust.ru/media/styles/images/not_image.gif"></p>
 </footer>

@@ -1,28 +1,40 @@
-<div class="w3-card-4" style="width:70%">
-    <header class="w3-container w3-light-grey">
-        <h3>John Doe</h3>
-    </header>
-    <div class="w3-container">
-        <p>1 new friend request</p>
-        <hr>
-        <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-        <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
-    </div>
-    <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
-</div>
 
-<table class="w3-table-all w3-card-4">
+<table class="w3-table-all" style="color: #3a3a3a;">
     <tr>
         <th>SR. NO</th>
         <th>CODE</th>
-        <th>Naame</th>
+        <th>Name</th>
         <th>S/O, D/O, W/O</th>
         <th>Contact No.</th>
-        <th>Pic</th>
+        <th>Image</th>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td><img src="img_avatar3.png" alt="Profile Pic" class="w3-left w3-circle w3-margin-right" style="width:60px"></td>
+    <tr dir-paginate="value in AppJSON.membersDirectory | itemsPerPage: 5" >
+        <td ng-bind="$index+1"></td>
+        <td ng-bind="value.code"></td>
+        <td ng-bind="value.name"></td>
+        <td ng-bind="value.sodowo"></td>
+        <td ng-bind="value.contact"></td>
+        <td><img ng-src="{{value.picPath}}" alt="Profile Pic" class="w3-center w3-circle w3-margin-auto" style="width:60px"></td>
     </tr>
 </table>
+<div style="float: right;">
+
+    <dir-pagination-controls
+            id="page"
+            class="right pagination-controller"
+            max-size="5"
+            direction-links="true"
+            boundary-links="true">
+    </dir-pagination-controls>
+</div>
+<!--
+<dir-pagination-controls
+        id="page"
+        on-page-change="getPageData(newPageNumber)"
+        class="right pagination-controller"
+        max-size="5"
+        direction-links="true"
+        boundary-links="true"
+        pagination-id="LocationsTable"
+        ng-show="poiListShow">
+</dir-pagination-controls>-->
