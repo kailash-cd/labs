@@ -1,75 +1,89 @@
-<?php
-/*
-$ToEmail = 'youremail@site.com';
-$EmailSubject = 'Site contact form';
-$mailheader = "From: ".$_POST["email"]."\r\n";
-$mailheader .= "Reply-To: ".$_POST["email"]."\r\n";
-$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n";
-$MESSAGE_BODY = "Name: ".$_POST["name"]."";
-$MESSAGE_BODY .= "Email: ".$_POST["email"]."";
-$MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"])."";
-mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure");
-*/
-?>
 
 <?php
-if(isset($_POST['email'])) {
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "you@yourdomain.com";
+    $email_to = "support@wilkd.com";
     $email_subject = "Your email subject line";
+
+  $data = json_decode(file_get_contents("php://input"));
+  $dataArray = (object) $data ;
 
     function died($error) {
         // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
+         $response = array(
+                 'status' => -1,
+                 'message' =>  $error
+             );
+         die();
     }
 
 
     // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
+    if(!isset($_POST['name']) ||
         !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
         !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');
+        $response = array(
+                         'status' => -1,
+                         'message' =>  "mandatory parameters are missing"
+                     );
+
+echo json_encode($response);
+exit(0);
     }
 
-
-
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
-  if(!preg_match($email_exp,$email_from)) {
+  if(!preg_match($email_exp,$dataArray->name)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $response = array(
+                                 'status' => -1,
+                                 'message' =>  $error_message
+                             );
+
+echo json_encode($response);
+exit(0);
   }
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-  if(!preg_match($string_exp,$first_name)) {
+  if(!preg_match($string_exp,$dataArray->name)) {
     $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+     $response = array(
+                                      'status' => -1,
+                                      'message' =>  $error_message
+                                  );
+
+echo json_encode($response);
+exit(0);
   }
 
-  if(!preg_match($string_exp,$last_name)) {
+  if(!preg_match($string_exp,$dataArray->comments)) {
     $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+     $response = array(
+                                      'status' => -1,
+                                      'message' =>  $error_message
+                                  );
+
+echo json_encode($response);
+exit(0);
   }
 
   if(strlen($comments) < 2) {
     $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+     $response = array(
+                                      'status' => -1,
+                                      'message' =>  $error_message
+                                  );
+
+echo json_encode($response);
+exit(0);
   }
 
-  if(strlen($error_message) > 0) {
-    died($error_message);
-  }
 
     $email_message = "Form details below.\n\n";
 
@@ -81,24 +95,25 @@ if(isset($_POST['email'])) {
 
 
 
-    $email_message .= "First Name: ".clean_string($first_name)."\n";
-    $email_message .= "Last Name: ".clean_string($last_name)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Telephone: ".clean_string($telephone)."\n";
-    $email_message .= "Comments: ".clean_string($comments)."\n";
+    $email_message .= "First Name: ".clean_string($dataArray->name)."\n";
+    $email_message .= "Email: ".clean_string($dataArray->email)."\n";
+    $email_message .= "Comments: ".clean_string($dataArray->comments)."\n";
 
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);
-?>
 
-<!-- include your own success html here -->
-
-Thank you for contacting us. We will be in touch with you very soon.
-
-<?php
+//<!-- include your own success html here -->
+ $response = array(
+            'status' => 0,
+            'member' => $dataArray->name,
+            'message' => 'Thank you for contacting us. We will be in touch with you very soon.'
+        );
 
 }
+
+echo json_encode($response);
+
 ?>
