@@ -75,7 +75,7 @@
         <div ng-show="AppJSON.pagetoShow == 11" ng-include="'video_gallery.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 12" ng-include="'notice_information.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 13" ng-include="'important_links.html'"></div>
-        <div ng-show="AppJSON.pagetoShow == 14" ng-include="'contact_us.html'"></div>
+        <div ng-if="AppJSON.pagetoShow == 14" ng-include="'contact_us.html'"></div>
     </div>
 </div>
 </body>

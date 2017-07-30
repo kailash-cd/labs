@@ -1,4 +1,3 @@
-
 <?php
 //header("Content-Type: application/json");
 
@@ -25,8 +24,8 @@ if ($conn->connect_error) {
          );
 }
 
-$sql = "INSERT INTO members (code, name, designation,sodowo,contact,picpath)
-VALUES ('$dataArray->code', '$dataArray->name', '$dataArray->designation', '$dataArray->sowodo',$dataArray->contact,'$dataArray->picPath')";
+$sql = "INSERT INTO members (code, name,email, designation,sodowo,contact,picpath)
+VALUES ('$dataArray->code', '$dataArray->name', '$dataArray->email', '$dataArray->designation', '$dataArray->sowodo',$dataArray->contact,'$dataArray->picPath')";
 
 if ($conn->query($sql) === TRUE) {
     //echo "New record created successfully";
