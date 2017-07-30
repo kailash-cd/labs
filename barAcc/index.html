@@ -24,16 +24,24 @@
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button ng-click="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+    <button ng-click="closeNavbar()" class="w3-bar-item w3-large">Close &times;</button>
     <a href="#" ng-click="navigationControl('home')" class="w3-bar-item w3-button">Home</a>
     <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
-    <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Members Directory</a>
+    <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Directory of bar association</a>
     <a href="#" ng-click="navigationControl('aimAndObjectives')" class="w3-bar-item w3-button">Aim & Objectives</a>
+    <a href="#" ng-click="navigationControl('mission_vision')" class="w3-bar-item w3-button">Mission and vision</a>
+    <a href="#" ng-click="navigationControl('president_message')" class="w3-bar-item w3-button">President message</a>
+    <a href="#" ng-click="navigationControl('secretary_message')" class="w3-bar-item w3-button">Secretary message</a>
     <a href="#" ng-click="navigationControl('judge')" class="w3-bar-item w3-button">Judge Details</a>
     <a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
     <a href="#" ng-click="navigationControl('registrar_gernal')" class="w3-bar-item w3-button">Registrar General</a>
+    <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
+    <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
+    <a href="#" ng-click="navigationControl('notice_information')" class="w3-bar-item w3-button">Notices & Information</a>
+    <a href="#" ng-click="navigationControl('important_links')" class="w3-bar-item w3-button">Important Links</a>
     <a href="http://lobis.nic.in/index.php" target="_blank" class="w3-bar-item w3-button">High Court Judgement Information system</a>
-    <a href="http://clists.nic.in/viewlist/index.php?court=U0dsbmFDQkRiM1Z5ZENCdlppQlZkSFJoY21GcmFHRnVaQ0JoZENCT1lXbHVhWFJoYkE9PQ==&q=TkdJMFlUazJZV000WW1JNE5XTmpOelUzTnpVeFpXTXlNRFZrWXpVMFkyUT0=" target="_blank" class="w3-bar-item w3-button">High Court Cause List (Weekly)</a>
+    <a href="http://clists.nic.in/viewlist/index.php?court=U0dsbmFDQkRiM1Z5ZENCdlppQlZkSFJoY21GcmFHRnVaQ0JoZENCT1lXbHVhWFJoYkE9PQ==&q=TkdJMFlUazJZV000WW1JNE5XTmpOelUzTnpVeFpXTXlNRFZrWXpVMFkyUT0=" target="_blank" class="w3-bar-item w3-button">High Court Case List (Weekly)</a>
+    <a href="#" ng-click="navigationControl('contact_us')" class="w3-bar-item w3-button">Contact us</a>
 </div>
 <!-- side bar ends -->
 <!-- top nav bar -->
@@ -47,7 +55,7 @@
 <!-- top nav bar ends -->
 <!-- Page Content -->
 <div class="w3-teal">
-    <button class="w3-button w3-xlarge" ng-click="w3_open()">☰</button>
+    <button class="w3-button w3-xlarge" ng-click="openNavbar()">☰</button>
     <div class="w3-container">
     <center>
         <h1>Coming soon..</h1>
@@ -60,6 +68,14 @@
         <div ng-show="AppJSON.pagetoShow == 4" ng-include="'judge.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 5" ng-include="'sitting_judges.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 6" ng-include="'registrar_gernal.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 7" ng-include="'mission_vision.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 8" ng-include="'president_message.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 9" ng-include="'secretary_message.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 10" ng-include="'photo_gallery.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 11" ng-include="'video_gallery.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 12" ng-include="'notice_information.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 13" ng-include="'important_links.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 14" ng-include="'contact_us.html'"></div>
     </div>
 </div>
 </body>

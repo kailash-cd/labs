@@ -256,10 +256,10 @@ app.controller('myCtrl', function($scope) {
         ]
     }
 
-    $scope.w3_open = function() {
+    $scope.openNavbar = function() {
         document.getElementById("mySidebar").style.display = "block";
     }
-    $scope.w3_close = function() {
+    $scope.closeNavbar = function() {
         document.getElementById("mySidebar").style.display = "none";
     }
 
@@ -287,8 +287,32 @@ app.controller('myCtrl', function($scope) {
             case "registrar_gernal":
                 $scope.AppJSON.pagetoShow = 6;
                 break;
+            case "mission_vision":
+                $scope.AppJSON.pagetoShow = 7;
+                break;
+            case "president_message":
+                $scope.AppJSON.pagetoShow = 8;
+                break;
+            case "secretary_message":
+                $scope.AppJSON.pagetoShow = 9;
+                break;
+            case "photo_gallery":
+                $scope.AppJSON.pagetoShow = 10;
+                break;
+            case "video_gallery":
+                $scope.AppJSON.pagetoShow = 11;
+                break;
+            case "notice_information":
+                $scope.AppJSON.pagetoShow = 12;
+                break;
+            case "important_links":
+                $scope.AppJSON.pagetoShow = 13;
+                break;
+            case "contact_us":
+                $scope.AppJSON.pagetoShow = 14;
+                break;
         }
-        $scope.w3_close();
+        $scope.closeNavbar();
     }
 
     $scope.pageChangeHandler = function(num) {

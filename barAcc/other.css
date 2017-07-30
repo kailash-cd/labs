@@ -96,6 +96,8 @@ div.desc {
 
 .groupPic {
     max-width: 100%;
+    min-height: 400px;
+    max-height: 400px;
     height: 400px;
 }
 
@@ -110,4 +112,10 @@ div.desc {
     right: 0;
     font-size: 80%;
     line-height: 20px;
+}
+
+#mySidebar::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
 }
