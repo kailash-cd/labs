@@ -423,11 +423,39 @@ app.controller('myCtrl', function($scope) {
 
     $scope.openNavbar = function() {
         document.getElementById("mySidebar").style.display = "block";
+        acc[0].click();
     }
     $scope.closeNavbar = function() {
         document.getElementById("mySidebar").style.display = "none";
     }
+    $scope.pageChangeHandler = function(num) {
+        $scope.AppJSON.sno = num;
+    };
+    var acc = document.getElementsByClassName("accordion");
+    var panels = document.getElementsByClassName("panel");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            resetAll();
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.display = "block"
+            }
+        }
+    }
+    function resetAll(){
+        for (i = 0; i < panels.length; i++) {
+            if (panels[i].style.maxHeight){
+                panels[i].style.maxHeight = null;
+            }
+
+        }
+    }
     $scope.navigationControl = function (page) {
         console.log("navigate to ",page);
         switch (page){
@@ -480,9 +508,7 @@ app.controller('myCtrl', function($scope) {
         $scope.closeNavbar();
     }
 
-    $scope.pageChangeHandler = function(num) {
-        $scope.AppJSON.sno = num;
-    };
+
 });
 
 
