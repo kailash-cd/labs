@@ -233,9 +233,11 @@ app.controller('myCtrl', function($scope) {
                 break;
         }
         $scope.w3_close();
-
     }
 
+    $scope.pageChangeHandler = function(num) {
+        $scope.AppJSON.sno = num;
+    };
 });
 
 
