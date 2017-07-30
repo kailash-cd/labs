@@ -206,7 +206,54 @@ app.controller('myCtrl', function($scope) {
                 "picPath":"images/members/face.gif"
             }
         ],
-        "sno": 1
+        "sno": 1,
+        "sittingJudges":[
+            {
+                "name":"Hon’ble Mr. Justice Sharad Kumar Sharma",
+                "description":"Born on 1st January, 1962 at Allahabad, Uttar Pradesh. Justice Sharma attained his primary and secondary education from ‘Boys’ High School and Intermediate College, Allahabad and thereafter did his B.Com and LL.B from Allahabad University. He also holds Diploma in Material Management from Indian Institute of Engineering & Rural Technology, Allahabad. Enrolled as an Advocate on 29.02.1992 and started practice at Allahabad High Court on Civil, Constitutional, Service and Revenue Side matters from 1992 till 2000. His father Shri H.N. Sharma and brother Shri Anirudh Sharma are the Advocates and practicing at Allahabad High Court. His mother Smt. Sarla Sharma is housewife.After creation of State of Uttarakhand in the year 2000, he shifted to Nainital and started appearing and conducting different types of cases before the Hon’ble High Court of Uttarakhand at Nainital. In the year 2009, he was designated as Senior Advocate. Being Senior Panel Advocate, he appeared for High Court of Nainital, O.N.G.C., Dehradun, A.R.I.E.S, Nainital, Forest Corporation of Uttarakhand, Uttarakhand Transport Corporation etc. On 19.05.2017, he was elevated to the Bench and took charge as Addl. Judge, High Court of Uttarakhand. ",
+                "picPath":"images/judges/Justice_alok_singh_26022013.jpg"
+            },
+            {
+                "name":"Hon’ble Mr. Justice Manoj Kumar Tiwari",
+                "description":"Born on 19th September, 1965 at Pithoragarh, Uttarakhand in the family of lawyers. His father, Shri N.B. Tiwari is a designated Senior Advocate and Maternal grandfather Shri Ram Datt Chilkoti was a leading lawyer in District Pithoragarh. Studied at Kendriya Vidyalaya, Pithoragarh upto 10th standard. Did Graduation & Post Graduation from Government Post Graduate College, Pithoragarh. Passed LL.B. from Delhi University in 1990. Enrolled with Bar Council of U.P. Allahabad in 1990 and started practice at Hon’ble High Court of Judicature at Allahabad. Upon creation of Hon’ble Uttarakhand High Court in the year 2000, shifted to Nainital and practiced before Hon’ble Uttarakhand High Court. On 20.05.2009, he was designated as Senior Advocate. Held the office of President, High Court Bar Association, Nainital in 2008. He appeared as special counsel on behalf of the State Government in various cases. He was elevated as permanent Judge, High Court of Uttarakhand on 19.05.2017. ",
+                "picPath":"images/judges/Justice_Rajiv_Sharma1.jpg"
+            },
+            {
+                "name":"Hon’ble Mr. Justice Lok Pal Singh",
+                "description":"Born on 15th February, 1959 in Village Mohanpur-Mohammadpur, Tehsil Roorkee (then District Saharanpur) now District Haridwar, Uttarakhand, in a family of a farmer Late Shri Harpal Singh, mother Smt. Yashoda Devi was house-wife. Primary education from Cantonment Primary School, Roorkee Cantt. High School and Intermediate from BSM Intermediate College, Roorkee. Did Graduation and Law Degree from Meerut University, Meerut. Started practicing since 1988 at Civil Court, Roorkee in Civil and Revenue side initially. On creation of District Haridwar in 1989, shifted to District Court Haridwar and started practising in Civil, Revenue and Criminal matters.On creation of State of Uttarakhand immediately shifted to High Court of Uttarakhand and became founder member of the Bar Association. In the High Court, initially conducted Revenue, Civil and Criminal cases, and thereafter, conducted the matters relating to Constitution, Service, Company, Arbitration, Land Acquisition etc. Remained counsel for Pepsu Transport Corporation, Special Counsel on behalf of State of U.P. in some matters, Standing Counsel for Uttarakhand Power Corporation Ltd. as well as District Cooperative Banks of Uttarakhand and other private Banks. For a long period, empanelled in the pool of Advocates for the High Court.On 19th May, 2017 elevated as a permanent Judge of High Court of Uttarakhand and was assigned independent judicial work from the date of assuming the charge.",
+                "picPath":"images/judges/LokpalSingh.jpg"
+            },
+            {
+                "name":"Hon’ble Mr. Justice Umesh Chandra Dhyani",
+                "description":"Joined Uttar Pradesh Judicial Service on 05.11.1979. Was posted as Law Secretary, Government of Uttarakhand and Legal Advisor to His Excellency, the Governor of  Uttarakhand. Has also worked as District Judge Udam Singh Nagar; District Judge Nainital; Director of State Judicial Academy (UJALA) and District Judge Dehradun. Appointed as Registrar General, High Court of Uttarakhand, Nainital vide notification dated 20.09.2010 and assumed charge of the office on 20.09.2010. Elevated as Judge of the Uttarakhand High Court On 13th September, 2011.",
+                "picPath":"images/judges/Manoj_Kumar_Tiwari.jpg"
+            },
+            {
+                "name":"Hon’ble Mr. Justice Servesh Kumar Gupta",
+                "description":"was born on 1st January, 1956 at Khair, District Aligarh, Uttar Pradesh. His father was a school teacher. In the year 1976, he completed his LL.B. from Agra University. Subsequently, he did his LL.M. from Meerut University in 1979. He joined the Uttar Pradesh Judicial Services on 5th November, 1979 and served in various judicial positions in the State. Pursuant to the creation of the State of Uttarakhand, he opted for the same. Mr. Gupta served as the District Judge of Rudraprayag, Pauri Garhwal and Haridwar. His other prominent assignments included Chairman, Uttarakhand Tax Tribunal and Legal Adviser to H.E. the Governor of Uttarakhand. His wife is a home maker. His eldest son and daughter-in-law are Advocates and his other two sons are also studying law. In the forenoon of 21.04.2011, he was elevated as a Judge of the High Court of Uttarakhand at Nainital.",
+                "picPath":"images/judges/sdhulia.jpg"
+            },
+            {
+                "name":"Hon’ble Mr. Justice Alok Singh",
+                "description":"Born on 28.04.1959 at Roorkee. Justice Singh attained his primary education in Roorkee and thereafter did his Graduation in science from M.S. College, Saharanpur. After which he pursued law and joined practice in 1982 in Civil / District Courts Roorkee, Hardwar. During this period he represented U.P. State electricity Board, U.P. Awas Vikas Parishad, Oriental Insurance Co. National Insurance Co., Nagar Palika Mangalore, Nagar Palika Roorkee beside other organizations and individuals.In April, 1993 shifted to New Delhi and started appearing before Supreme Court of India, High Court of Delhi, State and National Consumer commission, Delhi beside other courts and tribunals.Represented State of U.P. in different type of cases before Supreme Court of India being on the Senior Panel of Advocates of State of U.P.After creation of State of Uttarakhand started appearing and conducting different types of cases before the Hon’ble High Court of Uttarakhand at Nainital and has appeared for Central Government before Hon’ble High Court of Uttarakhand being Central Government Senior Panel Advocate and also appeared for Power Grid Corporation of India, Uttarakhand Power Corporation ltd., Uttarakhand Jal Vidyut Nigam Ltd. , Food Corporation of India, Uttarakhand Wakf Board, Board of control of Cricket in India. Etc.He was elevated to the High Court of Uttarakhand on 12.10.2009 as a Judge. On transfer, assumed office of Permanent Judge of Punjab & Hariyana High Court, Chandigarh on 21.12.2009 (F.N.). Took oath as the Judge of Jharkhand High Court, Ranchi on 13.06.2012. His Lordship was transferred to High Court of Uttarakhand and he assumed office of a Judge of High Court of Uttarakhand on 26/02/2013. ",
+                "picPath":"images/judges/Servesh_K_Gupta.jpg"
+            },
+            {
+                "name":"Hon'ble Mr. Justice Sudhanshu Dhulia (Hon'ble Judge In-Charge Education, Uttarakhand Judicial and Legal Academy)",
+                "description":"was born on 10thAugust, 1960 in a small Cantonment Town of Lansdowne in Pauri Garhwal, Uttarakhand. He is the son of Late Sri K.C. Dhulia ( Judge, Allahabad High Court) and grandson of Pundit Bhairav Dutt Dhulia, freedom fighter and editor of Karambhumi newspaper which he established in the year 1938 and which played a key role in the freedom struggle in Garhwal Region. Mr. Dhulia is the second of the three sons of Late Sri K.C. Dhulia. He started his practice before the Allahabad High Court in the year 1986.Sri Dhulia was a retainer for Indian Institute of Technology (I.I.T.), Roorkee, State Industrial Development Corporation of Uttarakhand Ltd. (SIDCUL), Bhagirathi River Valley Authority, amongst others. He was also an Honorary professor in the Uttarakhand Academy of Administration (ATI) Nainital. On the creation of the new State of Uttarakhand, Sri Dhulia became its First Chief Standing Counsel. He was later appointed as the Additional Advocate General. In the year 2004, he was designated as a Senior Advocate by the Uttarakhand High Court. On 01.11.2008, he was elevated to the Bench and took charge as Judge, High Court of Uttarakhand.",
+                "picPath":"images/judges/sharad_kumar_sharma.jpg"
+            },
+            {
+                "name":"Hon'ble Mr. Justice Rajiv Sharma, Judge",
+                "description":"Born on 8.10.1958. Obtained LL.B. Degree from Himachal Pradesh University. Enrolled as Advocate in the year 1982. Designated Senior Advocate in the year 2002. Primarily practiced in the High Court of Himachal Pradesh in Constitutional Law, Administrative Law, Employment Cases and Environmental Law. Visited U.S.A., China, Egypt, Sri Lanka, Myanmar, Thailand, Vietnam, Dubai, New Zealand, U.K., Italy, Switzerland, Belgium, Germany, France, Denmark, Sweden, Norway, Finland and Russia. Appointed Additional Judge, High Court of Himachal Pradesh on 3rd April, 2007 and confirmed as permanent Judge on 31st March 2013. Transferred to High Court of Uttarakhand and assumed office of a Judge of High Court of Uttarakhand on 26/09/2016.",
+                "picPath":"images/judges/u.c.dhyani.jpg"
+            },
+            {
+                "name":"Hon'ble Mr. Justice V.K. Bist",
+                "description":"Born on 17th September 1957 at Lansdown, District Pauri Garhwal, Uttarakhand. Early education from Intermediate College Kanskhet, Pauri Garhwal. Completed Law Degreee from Allahabad University. Enrolled as an Advocate with the Bar Council of Uttar Pradesh in 1984 and started practicing in various segments of litigations and till first week of November 2000 continued practicing at Allahabad High Court. Initially worked under the guidance of Shri S.P. Gupta, Senior Advocate. During the period at Allahabad remained Legal Advisor and Standing Counsel/ Panel Advocate of various esteemed institutions i.e. Allahabad University, U.P. Higher Secondary Education, Northern/North Eastern Railway, U.P. Land Development Corporation, U.P. Co-operative Housing Federation, Ghaziabad Development Authority etc. After creation of Uttarakhand High Court His Lordship shifted to Nainital and practiced at Uttarakhand High Court. At the Uttarakhand High Court, His Lordship was Standing Counsel of Northern and North Eastern Railway, Uttarakhand Forest Development Corporation, Uttarakhand School Education Board and Uttarakhand Co-operative Federation. Also worked as Senior Panel Counsel, Uattarakhand High Court. On 1st July 2004 His Lordship was designated as Senior Advocate. On November 1, 2008 was elevated as Judge of the Uttarakhand High Court.",
+                "picPath":"images/judges/vkbist.jpg"
+            }
+        ]
     }
 
     $scope.w3_open = function() {
@@ -230,6 +277,12 @@ app.controller('myCtrl', function($scope) {
                 break;
             case "aimAndObjectives":
                 $scope.AppJSON.pagetoShow = 3;
+                break;
+            case "judge":
+                $scope.AppJSON.pagetoShow = 4;
+                break;
+            case "sitting_judges":
+                $scope.AppJSON.pagetoShow = 5;
                 break;
         }
         $scope.w3_close();

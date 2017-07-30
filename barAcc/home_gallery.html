@@ -1,5 +1,5 @@
 
-<div class="gallery" ng-repeat=" item in AppJSON.homeGallary">
+<div class="gallery thumbnail" ng-repeat=" item in AppJSON.homeGallary">
     <span  ng-bind="item.title"></span>
     <img ng-src="{{item.path}}" alt="Member" max-width="300" max-height="200">
     <div class="desc" ng-bind="item.name"></div>

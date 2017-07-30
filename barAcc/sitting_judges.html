@@ -1,0 +1,12 @@
+
+<div class="container text-center" >
+    <h4>Sitting Judges (Uttarakhand High Court)</h4><br>
+    <div class="row well text-left" style="color: #3a3a3a;">
+        <div class="col-sm-12 thumbnail" ng-repeat="item in AppJSON.sittingJudges">
+            <center><p><strong ng-bind="item.name"></strong></p></center>
+                <img ng-src="{{item.picPath}}" alt="Sitting Judge" style="max-height: 225px;max-width: 200px;width: 200px;height: 225px;"><br/>
+            <p ng-bind="item.description"></p>
+            <!--<span class="btn btn-primary">More</span>-->
+        </div>
+    </div>
+</div>

@@ -4,8 +4,8 @@
 <head>
     <script data-require="angular.js@*" data-semver="1.2.5" src="angular.js"></script>
     <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="parallex.css">
+    <!--<link rel="stylesheet" href="nav.css">-->
+    <!--<link rel="stylesheet" href="parallex.css">-->
     <link rel="stylesheet" href="other.css">
     <script src="app.js"></script>
     <script src="dirPagination.js"></script>
@@ -29,6 +29,10 @@
     <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
     <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Members Directory</a>
     <a href="#" ng-click="navigationControl('aimAndObjectives')" class="w3-bar-item w3-button">Aim & Objectives</a>
+    <a href="#" ng-click="navigationControl('judge')" class="w3-bar-item w3-button">Judge Details</a>
+    <a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
+    <a href="http://lobis.nic.in/index.php" target="_blank" class="w3-bar-item w3-button">High Court Judgement Information system</a>
+    <a href="http://clists.nic.in/viewlist/index.php?court=U0dsbmFDQkRiM1Z5ZENCdlppQlZkSFJoY21GcmFHRnVaQ0JoZENCT1lXbHVhWFJoYkE9PQ==&q=TkdJMFlUazJZV000WW1JNE5XTmpOelUzTnpVeFpXTXlNRFZrWXpVMFkyUT0=" target="_blank" class="w3-bar-item w3-button">High Court Cause List (Weekly)</a>
 </div>
 <!-- side bar ends -->
 <!-- top nav bar -->
@@ -52,6 +56,8 @@
         <div ng-show="AppJSON.pagetoShow == 1" ng-include="'about.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 2" ng-include="'members_directory.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 3" ng-include="'aimAndObjectives.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 4" ng-include="'judge.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 5" ng-include="'sitting_judges.html'"></div>
     </div>
 </div>
 </body>
