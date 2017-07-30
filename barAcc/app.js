@@ -284,6 +284,9 @@ app.controller('myCtrl', function($scope) {
             case "sitting_judges":
                 $scope.AppJSON.pagetoShow = 5;
                 break;
+            case "registrar_gernal":
+                $scope.AppJSON.pagetoShow = 6;
+                break;
         }
         $scope.w3_close();
     }
