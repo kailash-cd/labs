@@ -102,7 +102,7 @@ app.controller('myCtrl', function($scope) {
             },{
                 "code":"A-1",
                 "name": "Mr. Sandeep Tewari",
-                "designation":"Secretart General",
+                "designation":"Secretary General",
                 "sodowo":"son of daughter of wife of",
                 "contact":"9719373192",
                 "picPath":"images/members/face.gif"
