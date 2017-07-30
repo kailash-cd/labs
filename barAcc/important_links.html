@@ -3,9 +3,25 @@
     <h3>Important Links</h3><br>
     <div class="row well text-left" style="color: #3a3a3a;">
         <div class="col-sm-12">
-            <p>
-                > <a href="#" target="_blank">Link 1</a>
-            </p>
+           <table class="linksTable">
+               <tr>
+                   <th>
+                       Sr. no
+                   </th>
+                   <th>
+                       Links
+                   </th>
+               </tr>
+               <tr ng-repeat="links in AppJSON.importentLinks" >
+                   <td>
+                       <span class="links">{{$index+1}}</span>
+                   </td>
+                   <td>
+                       <a class="links" target="_blank" href="{{links.redirectLink}}">{{links.displayLink}}</a>
+                   </td>
+
+               </tr>
+           </table>
         </div>
     </div>
 </div>

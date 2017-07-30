@@ -253,6 +253,171 @@ app.controller('myCtrl', function($scope) {
                 "description":"Born on 17th September 1957 at Lansdown, District Pauri Garhwal, Uttarakhand. Early education from Intermediate College Kanskhet, Pauri Garhwal. Completed Law Degreee from Allahabad University. Enrolled as an Advocate with the Bar Council of Uttar Pradesh in 1984 and started practicing in various segments of litigations and till first week of November 2000 continued practicing at Allahabad High Court. Initially worked under the guidance of Shri S.P. Gupta, Senior Advocate. During the period at Allahabad remained Legal Advisor and Standing Counsel/ Panel Advocate of various esteemed institutions i.e. Allahabad University, U.P. Higher Secondary Education, Northern/North Eastern Railway, U.P. Land Development Corporation, U.P. Co-operative Housing Federation, Ghaziabad Development Authority etc. After creation of Uttarakhand High Court His Lordship shifted to Nainital and practiced at Uttarakhand High Court. At the Uttarakhand High Court, His Lordship was Standing Counsel of Northern and North Eastern Railway, Uttarakhand Forest Development Corporation, Uttarakhand School Education Board and Uttarakhand Co-operative Federation. Also worked as Senior Panel Counsel, Uattarakhand High Court. On 1st July 2004 His Lordship was designated as Senior Advocate. On November 1, 2008 was elevated as Judge of the Uttarakhand High Court.",
                 "picPath":"images/judges/vkbist.jpg"
             }
+        ],
+        "officeBearers":[
+            {
+                "name":"B.S Jakhar",
+                "contactPhone":"9811178353",
+                "chNum":"5531",
+                "position":"President1",
+                "dp":"https://s-media-cache-ak0.pinimg.com/originals/6e/b3/a2/6eb3a2db6d4db37d87888bbaa4b90f8c.jpg"
+            },
+            {
+                "name":"B.S Jakhar1",
+                "contactPhone":"9811178352",
+                "chNum":"5532",
+                "position":"President2",
+                "dp":"https://s-media-cache-ak0.pinimg.com/originals/6e/b3/a2/6eb3a2db6d4db37d87888bbaa4b90f8c.jpg"
+            },
+            {
+                "name":"B.S Jakhar2",
+                "contactPhone":"9811178354",
+                "chNum":"55322",
+                "position":"President3",
+                "dp":"https://s-media-cache-ak0.pinimg.com/originals/6e/b3/a2/6eb3a2db6d4db37d87888bbaa4b90f8c.jpg"
+            },
+            {
+                "name":"B.S Jakhar3",
+                "contactPhone":"9811178356",
+                "chNum":"55333",
+                "position":"President4",
+                "dp":"https://s-media-cache-ak0.pinimg.com/originals/6e/b3/a2/6eb3a2db6d4db37d87888bbaa4b90f8c.jpg"
+            }
+        ],
+        "importentLinks":[
+            {
+                "displayLink":"ALL INDIA JUDICIAL SERVICE",
+                "redirectLink":"http://www.delhidistrictcourts.nic.in/Links.htm"
+            },
+            {
+                "displayLink":" Board for Industrial and Financial Reconstruction (BIFR)",
+                "redirectLink":"http://bifr.nic.in/"
+            },
+            {
+                "displayLink":"Central Bureau of Investigation",
+                "redirectLink":"http://www.cbi.gov.in/index.php"
+            },
+            {
+                "displayLink":"Central Pollution Control Board, Delhi",
+                "redirectLink":"http://www.rcbadelhi.com/importantlinks.html#"
+            },
+            {
+                "displayLink":"Central Vigilance Commission",
+                "redirectLink":"http://cvc.nic.in/welcome_cvc.html"
+            },
+            {
+                "displayLink":"Delhi Development Authority (DDA)",
+                "redirectLink":"http://www.ddadelhi.com/"
+            },
+            {
+                "displayLink":"Delhi Government",
+                "redirectLink":"http://www.delhi.gov.in/wps/wcm/connect/Lib_CentralJail/central+jail/home"
+            },
+            {
+                "displayLink":"Delhi Metro Rail Corporation Limited (DMRC)",
+                "redirectLink":"http://www.delhimetrorail.com/"
+            },
+            {
+                "displayLink":"Delhi Minorities Commission",
+                "redirectLink":"http://www.delhi.gov.in/wps/wcm/connect/doit_dmc/DMC/Home/"
+            },
+            {
+                "displayLink":"Department of Police - Delhi",
+                "redirectLink":"http://www.rcbadelhi.com/Department%20of%20Police%20-%20Delhi"
+            },
+
+            {
+                "displayLink":"Delhi Urban Art Commission (DUAC)",
+                "redirectLink":"http://www.duac.org/"
+            },
+            {
+                "displayLink":"Directorate of Estates",
+                "redirectLink":"http://estates.nic.in/estates.aspx"
+            },
+            {
+                "displayLink":" Federal Magistrates Service (Australia)",
+                "redirectLink":"http://www.fmc.gov.au/"
+            },
+            {
+                "displayLink":"House of Lords – Latest Judgements",
+                "redirectLink":"http://www.parliament.uk/Util/login.aspx?ReturnUrl=/Templates/ErrorPages/404.aspx?404;http://turkey.lbi.co.uk:80/judicial_work/judicial_work.cfm"
+            },
+            {
+                "displayLink":"India Internet Law Library",
+                "redirectLink":"http://www.priweb.com/internetlawlib/66.htm"
+            },
+            {
+                "displayLink":" India Image – A gateway for Government Sites",
+                "redirectLink":"http://indiaimage.nic.in/"
+            },
+            {
+                "displayLink":"International Criminal Court",
+                "redirectLink":"http://www.icc-cpi.int/Menus/ICC/Home"
+            },
+            {
+                "displayLink":"Judicial Academy",
+                "redirectLink":"http://www.judicialacademy.nic.in/"
+            },
+            {
+                "displayLink":"Land and Development Office",
+                "redirectLink":"http://www.ldo.nic.in/"
+            },
+            {
+                "displayLink":"Law Commission of India",
+                "redirectLink":"http://lawcommissionofindia.nic.in/"
+            },
+            {
+                "displayLink":"Ministry of Law & Justice",
+                "redirectLink":"http://lawmin.nic.in/"
+            },
+            {
+                "displayLink":"National Crime Records Bureau (NCRB)",
+                "redirectLink":"http://ncrbindia.org/"
+            },
+            {
+                "displayLink":"National Law School of India",
+                "redirectLink":"http://www.nls.ac.in/"
+            },
+            {
+                "displayLink":"Other High Courts in India",
+                "redirectLink":"http://www.indiancourts.nic.in/"
+            },
+            {
+                "displayLink":" Patent & Know-how Information Division",
+                "redirectLink":"http://pk2id.delhi.nic.in/"
+            },
+            {
+                "displayLink":" Press Council of India (PCI)",
+                "redirectLink":"http://presscouncil.nic.in/"
+            },
+            {
+                "displayLink":"http://app.subcourts.gov.sg/subcourts/index.aspx",
+                "redirectLink":" Subordinate Courts of Singapore"
+            },
+            {
+                "displayLink":" Supreme Court of India",
+                "redirectLink":"http://www.supremecourtofindia.nic.in/"
+            },
+            {
+                "displayLink":" Supreme Court of Canada",
+                "redirectLink":"http://www.scc-csc.gc.ca/"
+            },
+            {
+                "displayLink":" Supreme Court of the United States",
+                "redirectLink":"http://www.supremecourt.gov/"
+            },
+            {
+                "displayLink":" Tihar Prisons",
+                "redirectLink":"http://www.rcbadelhi.com/importantlinks.html#"
+            },
+            {
+                "displayLink":"http://www.biotechpatents.org/",
+                "redirectLink":" Value Added Patent Information System"
+            },
+            {
+                "displayLink":"World Wide Fund (WWF) India",
+                "redirectLink":"http://www.wwfindia.org/"
+            }
         ]
     }
 

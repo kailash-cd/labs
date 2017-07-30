@@ -119,3 +119,17 @@ div.desc {
     width: 12px;
     background-color: #F5F5F5;
 }
+.linksTable{
+    width: 100%;
+    font-size: 23px;
+}
+.linksTable th{
+    text-align: center;
+}
+.linksTable td{
+    text-align: center;
+}
+
+.links{
+    font-size: 20px;
+}
