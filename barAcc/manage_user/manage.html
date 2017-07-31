@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="myApp" ng-controller="myCtrl">
+<html ng-app="manageUserApp" ng-controller="manageUserCtrl">
 
 <head>
-    <script data-require="angular.js@*" data-semver="1.2.5" src="angular.js"></script>
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="parallex.css">
-    <link rel="stylesheet" href="other.css">
-    <script src="app.js"></script>
-    <script src="dirPagination.js"></script>
+    <script data-require="angular.js@*" data-semver="1.2.5" src="../angular.js"></script>
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="stylesheet" href="../parallex.css">
+    <link rel="stylesheet" href="../other.css">
+    <script src="manage.js"></script>
+    <script src="../dirPagination.js"></script>
 
 
     <!--bootstarp dependencies-->
@@ -30,7 +30,7 @@
 </ul>
 <!-- top nav bar ends -->
 
-<div ng-show="AppJSON.adminPages == 0" ng-include="'manage_addmembers.html'"></div>
+<div  ng-include="'manage_addmembers.html'"></div>
 
 
 </body>
