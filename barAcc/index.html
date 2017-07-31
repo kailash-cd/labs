@@ -18,6 +18,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--bootstarp dependencies ends-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjTFTbN7EfR_MTacBOF2ICLhdrPl8W1wE"></script>
+
 </head>
 
 <body>
@@ -25,7 +27,7 @@
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
     <button ng-click="closeNavbar()" class="w3-bar-item w3-large">Close &times;</button>
-    <button class="accordion">Association</button>
+    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Association</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('home')" class="w3-bar-item w3-button">Home</a>
         <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
@@ -37,9 +39,9 @@
         <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
         <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
         <a href="#" ng-click="navigationControl('notice_information')" class="w3-bar-item w3-button">Notices & Information</a>
-        <a href="#" ng-click="navigationControl('contact_us')" class="w3-bar-item w3-button">Contact us</a>
+        <a href="#" ng-click="navigationControl('contact_us');" class="w3-bar-item w3-button">Contact us</a>
     </div>
-    <button class="accordion">Nanital High Court</button>
+    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Nanital High Court</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('judge')" class="w3-bar-item w3-button">Judge Details</a>
         <a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
@@ -47,7 +49,7 @@
     </div>
 
 
-    <button class="accordion">Other's</button>
+    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Other's</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('important_links')" class="w3-bar-item w3-button">Important Links</a>
         <a href="http://lobis.nic.in/index.php" target="_blank" class="w3-bar-item w3-button">High Court Judgement Information system</a>
@@ -61,7 +63,7 @@
     <li><a href="#news">Tab1</a></li>
     <li><a href="#contact">Tab2</a></li>
     <li><a href="#about">About Us</a></li>-->
-    <marquee class="marquee">Notification Message</marquee>
+    <marquee class="marquee">Welcome To High Court Bar Association,  Nainital</marquee>
 </ul>
 <!-- top nav bar ends -->
 <!-- Page Content -->
@@ -69,7 +71,7 @@
     <button class="w3-button w3-xlarge" ng-click="openNavbar()">☰</button>
     <div class="w3-container">
     <center>
-        <h1>Coming soon..</h1>
+        <h1>High Court Bar Association</h1>
     </center>
             <!-- app -->
         <div ng-show="AppJSON.pagetoShow == 0" ng-include="'home.html'"></div>

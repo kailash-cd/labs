@@ -3,7 +3,7 @@
  */
 var app = angular.module('myApp', ['angularUtils.directives.dirPagination']);
 
-app.controller('myCtrl', function($scope) {
+app.controller('myCtrl', function($scope,$timeout) {
     $scope.foo = 'This is from the controller!';
     $scope.AppJSON = {
         homeGallary: [
@@ -102,7 +102,7 @@ app.controller('myCtrl', function($scope) {
             },{
                 "code":"A-1",
                 "name": "Mr. Sandeep Tewari",
-                "designation":"Secretart General",
+                "designation":"Secretary General",
                 "sodowo":"son of daughter of wife of",
                 "contact":"9719373192",
                 "picPath":"images/members/face.gif"
@@ -503,11 +503,25 @@ app.controller('myCtrl', function($scope) {
                 break;
             case "contact_us":
                 $scope.AppJSON.pagetoShow = 14;
+                $timeout(function () {
+                    $scope.myMap();
+                },2000);
                 break;
         }
         $scope.closeNavbar();
     }
 
+    $scope.myMap =  function ()  {
+        console.log("map")
+        var myCenter = new google.maps.LatLng(29.3957586,79.44771);
+        var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+        $scope.map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap($scope.map);
+    }
+  /*$timeout(function () {
+          google.maps.event.trigger($scope.map, "resize");
+  },2000);*/
 
 });
 
