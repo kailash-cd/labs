@@ -16,7 +16,7 @@
         <th>Name</th>
         <th>S/O, D/O, W/O</th>
         <th>Contact No.</th>
-        <th>Image</th>
+        <!--<th>Image</th>-->
     </tr>
     <tr dir-paginate="value in AppJSON.membersDirectory | filter:q | itemsPerPage: 5" >
         <td>{{((AppJSON.sno-1)*5)+$index+1}}</td>
@@ -24,7 +24,7 @@
         <td ng-bind="value.name"></td>
         <td ng-bind="value.sodowo"></td>
         <td ng-bind="value.contact"></td>
-        <td><img ng-src="{{value.picPath}}" alt="Profile Pic" class="w3-center w3-circle w3-margin-auto" style="width:60px"></td>
+       <!-- <td><img ng-src="{{value.picPath}}" alt="Profile Pic" class="w3-center w3-circle w3-margin-auto" style="width:60px"></td>-->
     </tr>
 </table>
 <div style="float: right;">
