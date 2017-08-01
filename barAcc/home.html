@@ -19,7 +19,7 @@
         color: white;
     }
 </style>
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height: 300px;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-height: 500px;">
     <!-- Indicators -->
   <!--  <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="{{$Index}}" ng-class="{active:$index == 0}" ng-repeat="item in AppJSON.homeBanners"></li>
@@ -29,7 +29,7 @@
     <div class="carousel-inner" role="listbox">
         <div class="item" ng-class="{active:$index == 0}" ng-repeat="item in AppJSON.homeBanners">
             <!--<img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">-->
-            <img src="{{item.path}}" alt="Image"  style="max-height: 300px;display: block;
+            <img src="{{item.path}}" alt="Image"  style="max-height: 500px;display: block;
     margin: auto;">
             <!--<div class="carousel-caption">-->
                 <!--<h3>{{item.title}}</h3>-->
@@ -84,23 +84,24 @@
                 High Court Campus <br/>
                 Nainital High Court <br/>
                 Nainital,  Mallital, U. K. 230002<br/>
+                Phone - 9639341445<br/>
             </div>
             <div class="col-sm-8 ">
 
                 <div class="col-sm-6 thumbnail">
                     <p><strong>President</strong></p>
-                    <img src="images/members/face.gif" alt="Member" style="max-height: 300px;"><br/>
-                    <p>Name</p>
+                    <img ng-src="images/members/president.jpg" alt="Member" style="max-height: 300px;"><br/>
+                    <p>Mr. Sayeed Nadeem Khurshid</p>
                     <!--<span class="btn btn-primary">More</span>-->
                 </div>
                 <div class="col-sm-6 thumbnail">
                     <p><strong>	Hony. Secretary</strong></p>
-                    <img src="images/members/face.gif" alt="Member" style="max-height: 300px;"><br/>
+                    <img ng-src="images/members/secratry.jpg" alt="Member" style="max-height: 300px;"><br/>
                     <!--<img src="./images/members/kailash.jpg" alt="Member" style="max-height: 300px;max-width: 300px;">-->
-                    <p>Name</p>
+                    <p>Mr. Sandeep Tewari</p>
                     <!--<button class="btn btn-primary">See Profile</button>-->
                 </div>
-                <br/>
+                <br/><hr/>
                 <div ng-include="'home_gallery.html'"></div>
             </div>
         </div>
@@ -126,6 +127,3 @@
         </div>
     </div>
 </div><br>
-<footer class="container-fluid text-center">
-    <p><img class="logo" src="http://www.rgtrust.ru/media/styles/images/not_image.gif"></p>
-</footer>

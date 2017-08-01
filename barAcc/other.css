@@ -132,3 +132,13 @@ div.desc {
 .links{
     font-size: 20px;
 }
+
+ h1 {
+    margin: 1em 0 0.5em 0;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    font-size: 36px;
+    line-height: 40px;
+    color: #355681;
+}

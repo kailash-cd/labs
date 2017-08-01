@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="w3.css">
     <!--<link rel="stylesheet" href="nav.css">-->
     <!--<link rel="stylesheet" href="parallex.css">-->
+    <title>HCBA,Nainital</title>
     <link rel="stylesheet" href="other.css">
     <script src="app.js"></script>
     <script src="dirPagination.js"></script>
@@ -30,28 +31,31 @@
     <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Association</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('home')" class="w3-bar-item w3-button">Home</a>
-        <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
-        <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Directory of bar association</a>
-        <a href="#" ng-click="navigationControl('aimAndObjectives')" class="w3-bar-item w3-button">Aim & Objectives</a>
-        <a href="#" ng-click="navigationControl('mission_vision')" class="w3-bar-item w3-button">Mission and vision</a>
-        <a href="#" ng-click="navigationControl('president_message')" class="w3-bar-item w3-button">President message</a>
-        <a href="#" ng-click="navigationControl('secretary_message')" class="w3-bar-item w3-button">Secretary message</a>
-        <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
-        <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
-        <a href="#" ng-click="navigationControl('notice_information')" class="w3-bar-item w3-button">Notices & Information</a>
+        <!-- <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
+         <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Directory of bar association</a>
+         <a href="#" ng-click="navigationControl('aimAndObjectives')" class="w3-bar-item w3-button">Aim & Objectives</a>
+         <a href="#" ng-click="navigationControl('mission_vision')" class="w3-bar-item w3-button">Mission and vision</a>
+         <a href="#" ng-click="navigationControl('president_message')" class="w3-bar-item w3-button">President message</a>
+         <a href="#" ng-click="navigationControl('secretary_message')" class="w3-bar-item w3-button">Secretary message</a>
+         <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
+         <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
+         <a href="#" ng-click="navigationControl('notice_information')" class="w3-bar-item w3-button">Notices & Information</a>-->
         <a href="#" ng-click="navigationControl('contact_us');" class="w3-bar-item w3-button">Contact us</a>
     </div>
     <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Nanital High Court</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('judge')" class="w3-bar-item w3-button">Judge Details</a>
-        <a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
-        <a href="#" ng-click="navigationControl('registrar_gernal')" class="w3-bar-item w3-button">Registrar General</a>
+        <!--<a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
+        <a href="#" ng-click="navigationControl('registrar_gernal')" class="w3-bar-item w3-button">Registrar General</a>-->
     </div>
 
 
-    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Other's</button>
+    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">More Info</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('important_links')" class="w3-bar-item w3-button">Important Links</a>
+        <a href="./resources/Advocates-Act1961.pdf"  target="_blank" class="w3-bar-item w3-button">Advocate-Act 1961</a>
+        <a href="./resources/PIL_RULES(delhi%20High%20court).pdf"  target="_blank" class="w3-bar-item w3-button">PIL Rules</a>
+        <a href="#"  target="_blank" class="w3-bar-item w3-button">Important Las & Rulings</a>
         <a href="http://lobis.nic.in/index.php" target="_blank" class="w3-bar-item w3-button">High Court Judgement Information system</a>
         <a href="http://clists.nic.in/viewlist/index.php?court=U0dsbmFDQkRiM1Z5ZENCdlppQlZkSFJoY21GcmFHRnVaQ0JoZENCT1lXbHVhWFJoYkE9PQ==&q=TkdJMFlUazJZV000WW1JNE5XTmpOelUzTnpVeFpXTXlNRFZrWXpVMFkyUT0=" target="_blank" class="w3-bar-item w3-button">High Court Case List (Weekly)</a>
     </div>
@@ -71,6 +75,7 @@
     <button class="w3-button w3-xlarge" ng-click="openNavbar()">☰</button>
     <div class="w3-container">
     <center>
+        <p><img class="logo" src="images/logo/logo_trans.png" width="90" style="margin-bottom: -45px;margin-top: -45px;background-color: #f2f2f2;;border-radius: 50px;"></p><br/>
         <h1>High Court Bar Association</h1>
     </center>
             <!-- app -->
@@ -90,6 +95,10 @@
         <div ng-show="AppJSON.pagetoShow == 13" ng-include="'important_links.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 14" ng-include="'contact_us.html'"></div>
     </div>
+    <footer class="container-fluid text-center">
+        <!--<p><img class="logo" src="http://www.rgtrust.ru/media/styles/images/not_image.gif"></p>-->
+        <p><img class="logo" src="images/logo/logo_trans.png" width="100"></p>
+    </footer>
 </div>
 </body>
 

@@ -47,13 +47,25 @@ app.controller('myCtrl', function($scope,$timeout) {
         ],
         homeBanners:[
             {
-                "path":"images/banner/1.jpg",
+                "path":"images/banner/5.JPG",
                 "title":"no title"
             },{
-                "path":"images/banner/2.jpg",
+                "path":"images/banner/6.JPG",
+                "title":"no title"
+            }/*,{
+                "path":"images/banner/7.JPG",
+                "title":"no title"
+            }*/,{
+                "path":"images/banner/2.JPG",
                 "title":"no title"
             },{
-                "path":"images/banner/3.jpg",
+                "path":"images/banner/1.JPG",
+                "title":"no title"
+            },{
+                "path":"images/banner/3.JPG",
+                "title":"no title"
+            },{
+                "path":"images/banner/4.JPG",
                 "title":"no title"
             },
         ],
@@ -77,7 +89,7 @@ app.controller('myCtrl', function($scope,$timeout) {
                 "designation":"President",
                 "sodowo":"son of daughter of wife of",
                 "contact":"9410170326",
-                "picPath":"images/members/face.gif"
+                "picPath":"images/members/president.jpg"
             },{
                 "code":"A-1",
                 "name": "Mr. Rakesh Kumar Joshi",
@@ -105,7 +117,7 @@ app.controller('myCtrl', function($scope,$timeout) {
                 "designation":"Secretary General",
                 "sodowo":"son of daughter of wife of",
                 "contact":"9719373192",
-                "picPath":"images/members/face.gif"
+                "picPath":"images/members/secratry.jpg"
             },{
                 "code":"A-1",
                 "name": "Mr. Kaushal Sah Jagati",
