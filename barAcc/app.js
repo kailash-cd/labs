@@ -433,12 +433,12 @@ app.controller('myCtrl', function($scope,$timeout) {
         ]
     }
 
-    $scope.openNavbar = function() {
-        document.getElementById("mySidebar").style.display = "block";
+    $scope.openNavbar = function(navbarId) {
+        document.getElementById(navbarId).style.display = "block";
         acc[0].click();
     }
-    $scope.closeNavbar = function() {
-        document.getElementById("mySidebar").style.display = "none";
+    $scope.closeNavbar = function(navbarId) {
+        document.getElementById(navbarId).style.display = "none";
     }
     $scope.pageChangeHandler = function(num) {
         $scope.AppJSON.sno = num;
@@ -518,6 +518,9 @@ app.controller('myCtrl', function($scope,$timeout) {
                 $timeout(function () {
                     $scope.myMap();
                 },2000);
+                break;
+            case "news":
+                $scope.AppJSON.pagetoShow = 15;
                 break;
         }
         $scope.closeNavbar();

@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="nav.css">-->
     <!--<link rel="stylesheet" href="parallex.css">-->
     <title>HCBA,Nainital</title>
+    <link rel="shortcut icon" href="images/logo/logo.jpg" />
     <link rel="stylesheet" href="other.css">
     <script src="app.js"></script>
     <script src="dirPagination.js"></script>
@@ -25,32 +26,33 @@
 
 <body>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-    <button ng-click="closeNavbar()" class="w3-bar-item w3-large">Close &times;</button>
-    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Association</button>
+<!-- left Sidebar -->
+<!--<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">-->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:block;" id="mySidebar">
+    <button ng-click="closeNavbar('mySidebar')" class="w3-bar-item w3-large">Close &times;</button>
+    <button class="accordion" style="background-color: cornflowerblue;">Association</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('home')" class="w3-bar-item w3-button">Home</a>
-        <!-- <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
+       <a href="#" ng-click="navigationControl('about')" class="w3-bar-item w3-button">About Us</a>
          <a href="#" ng-click="navigationControl('members_directory')" class="w3-bar-item w3-button">Directory of bar association</a>
          <a href="#" ng-click="navigationControl('aimAndObjectives')" class="w3-bar-item w3-button">Aim & Objectives</a>
          <a href="#" ng-click="navigationControl('mission_vision')" class="w3-bar-item w3-button">Mission and vision</a>
          <a href="#" ng-click="navigationControl('president_message')" class="w3-bar-item w3-button">President message</a>
          <a href="#" ng-click="navigationControl('secretary_message')" class="w3-bar-item w3-button">Secretary message</a>
-         <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
+        <!--   <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
          <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
          <a href="#" ng-click="navigationControl('notice_information')" class="w3-bar-item w3-button">Notices & Information</a>-->
         <a href="#" ng-click="navigationControl('contact_us');" class="w3-bar-item w3-button">Contact us</a>
     </div>
-    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">Nanital High Court</button>
+    <button class="accordion" style="background-color: cornflowerblue;">Nanital High Court</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('judge')" class="w3-bar-item w3-button">Judge Details</a>
-        <!--<a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
-        <a href="#" ng-click="navigationControl('registrar_gernal')" class="w3-bar-item w3-button">Registrar General</a>-->
+        <a href="#" ng-click="navigationControl('sitting_judges')" class="w3-bar-item w3-button">Sitting Judges</a>
+        <a href="#" ng-click="navigationControl('registrar_gernal')" class="w3-bar-item w3-button">Registrar General</a>
     </div>
 
 
-    <button class="accordion" style="background-color: hsla(174, 100%, 29%, 0.78);">More Info</button>
+    <button class="accordion" style="background-color: cornflowerblue;">More Info</button>
     <div class="panel">
         <a href="#" ng-click="navigationControl('important_links')" class="w3-bar-item w3-button">Important Links</a>
         <a href="./resources/Advocates-Act1961.pdf"  target="_blank" class="w3-bar-item w3-button">Advocate-Act 1961</a>
@@ -61,6 +63,23 @@
     </div>
 </div>
 <!-- side bar ends -->
+<!-- right Sidebar -->
+<!--<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">-->
+<div class="w3-sidebar w3-bar-block w3-border-left  w3-display-right" style="display:block;" id="mySidebar2" >
+    <button ng-click="closeNavbar('mySidebar2')" class="w3-bar-item w3-large">Close &times;</button>
+    <button class="accordion" style="background-color: cornflowerblue;">Gallery</button>
+    <div class="panel">
+
+        <a href="#" ng-click="navigationControl('photo_gallery')" class="w3-bar-item w3-button">Photo gallerry</a>
+        <a href="#" ng-click="navigationControl('video_gallery')" class="w3-bar-item w3-button">Video gallerry</a>
+    </div>
+    <button class="accordion" style="background-color: cornflowerblue;">News & Announcements</button>
+    <div class="panel">
+        <a href="#" ng-click="navigationControl('news')" class="w3-bar-item w3-button">News</a>
+    </div>
+
+</div>
+<!-- side bar ends -->
 <!-- top nav bar -->
 <ul id="topBar" style="margin-bottom:1px;"><!--
     <li><a class="active" href="#home">Home</a></li>
@@ -68,12 +87,14 @@
     <li><a href="#contact">Tab2</a></li>
     <li><a href="#about">About Us</a></li>-->
     <marquee class="marquee">Welcome To High Court Bar Association,  Nainital</marquee>
+
 </ul>
 <!-- top nav bar ends -->
 <!-- Page Content -->
-<div class="w3-teal">
-    <button class="w3-button w3-xlarge" ng-click="openNavbar()">☰</button>
-    <div class="w3-container">
+<div class="w3-container">
+    <button class="w3-button w3-xlarge" ng-click="openNavbar('mySidebar')">☰</button>
+    <button class="w3-button w3-xlarge w3-display-right" style="position: absolute;margin-top: -220px;" ng-click="openNavbar('mySidebar2')">☰</button>
+    <div class="w3-container" style="background-color: cornflowerblue;">
     <center>
         <p><img class="logo" src="images/logo/logo_trans.png" width="90" style="margin-bottom: -45px;margin-top: -45px;background-color: #f2f2f2;;border-radius: 50px;"></p><br/>
         <h1>High Court Bar Association</h1>
@@ -94,6 +115,7 @@
         <div ng-show="AppJSON.pagetoShow == 12" ng-include="'notice_information.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 13" ng-include="'important_links.html'"></div>
         <div ng-show="AppJSON.pagetoShow == 14" ng-include="'contact_us.html'"></div>
+        <div ng-show="AppJSON.pagetoShow == 15" ng-include="'news.html'"></div>
     </div>
     <footer class="container-fluid text-center">
         <!--<p><img class="logo" src="http://www.rgtrust.ru/media/styles/images/not_image.gif"></p>-->
